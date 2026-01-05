@@ -1,0 +1,40 @@
+{
+  "name": "@peassoft/verror",
+  "version": "1.0.0",
+  "description": "Extanded JavaScript error",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "engines": {
+    "node": ">=24.11"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "eslint ./ && npm run tsc && vitest run",
+    "tsc": "tsc --noEmit",
+    "build": "rm -rf dist && tsc -p tsconfig-build.json && api-extractor run --local --verbose"
+  },
+  "author": {
+    "name": "Alexey Gorokhov",
+    "email": "alexey.gorokhov@icloud.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/AlexeyGorokhov/mnr-logger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexeyGorokhov/mnr-logger"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexeyGorokhov/mnr-logger/issues"
+  },
+  "devDependencies": {
+    "@memnrev/eslint-v9-config": "^0.4.0",
+    "@microsoft/api-extractor": "^7.48.0",
+    "@total-typescript/ts-reset": "^0.6.1",
+    "@types/node": "^24.10.4",
+    "eslint": "^9.8.0",
+    "typescript": "^5.6.0",
+    "vitest": "^4.0.16"
+  }
+}
