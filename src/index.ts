@@ -4,6 +4,11 @@ type VErrorOpts = {
   info?: Record<string, unknown>;
 };
 
+/**
+ * Extanded JavaScript error
+ *
+ * @public
+ */
 export default class VError extends Error {
   override name: string;
   info?: Record<string, unknown>;
